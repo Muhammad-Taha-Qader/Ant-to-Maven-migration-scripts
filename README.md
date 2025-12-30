@@ -1,0 +1,241 @@
+# Ant to Maven Migration – Dependency Automation Tools
+
+This repository contains **small, focused Java utilities** designed to simplify one of the **most time-consuming parts of Ant → Maven migration**:
+
+> 🔹 **Converting a legacy `lib/` folder full of JARs into proper Maven dependencies**
+
+Instead of manually inspecting each JAR, searching online, and copying dependency snippets, these tools automate **classification and dependency generation**, reducing days of manual work to minutes.
+
+---
+
+## 🎯 Migration Problem This Solves
+
+In legacy Ant-based projects, dependencies are typically managed as:
+
+```
+/lib
+ ├── httpclient-4.5.14.jar
+ ├── jackson-core-2.18.1.jar
+ ├── i2c-custom-service.jar
+ ├── jaxp-api.jar
+ └── ...
+```
+
+During Maven migration, you must:
+
+* Identify **3rd-party vs internal JARs**
+* Convert versioned JARs into proper `<dependency>` entries
+* Decide how to handle non-versioned / internal JARs (e.g., Nexus, replacements, upgrades)
+
+This repository automates **exactly that phase**.
+
+---
+
+## 🧩 Tools Overview
+
+### 1️⃣ `JarVersionSplitter.java`
+
+**Purpose:**
+Splits a raw list of JAR file names into:
+
+* JARs **with versions** (usually 3rd-party)
+* JARs **without versions** (usually internal / legacy)
+
+#### Input
+
+A text file containing JAR names (one per line):
+
+```
+all-jars.txt
+```
+
+Example:
+
+```
+httpclient-4.5.14.jar
+jackson-core-2.18.1.jar
+i2c-random-card-common.jar
+jaxp-api.jar
+```
+
+#### Output
+
+* `jars-with-version.txt`
+* `jars-without-version.txt`
+
+#### Console Summary
+
+```
+===== JAR Split Summary =====
+Total jar names read     : 186
+Jars WITH version        : 143
+Jars WITHOUT version     : 43
+================================
+```
+
+#### How to Run
+
+```bash
+javac JarVersionSplitter.java
+java JarVersionSplitter
+```
+
+---
+
+### 2️⃣ `dependency-generator` (Maven project)
+
+**Purpose:**
+Automatically generates **ready-to-paste Maven `<dependency>` blocks** for all versioned JARs using **Maven Central Search API**.
+
+This eliminates:
+
+* Manual Google searches
+* Visiting mvnrepository.com
+* Copy-pasting dependency snippets
+
+#### Input
+
+```
+jars-with-version.txt
+```
+
+Each line:
+
+```
+artifactId-version.jar
+```
+
+Example:
+
+```
+FastInfoset-1.2.16.jar
+jackson-core-2.18.1.jar
+```
+
+---
+
+## 🏗 Project Structure
+
+```
+dependency-generator/
+ ├── pom.xml
+ └── src/main/java/
+     └── MavenDependencyGenerator.java
+```
+
+---
+
+## ▶ How to Run Dependency Generator
+
+### Step 1: Compile
+
+```bash
+mvn compile
+```
+
+### Step 2: Execute
+
+```bash
+mvn exec:java
+```
+
+(Uses `exec-maven-plugin` configured in `pom.xml`)
+
+---
+
+## 📤 Output Files
+
+### 1️⃣ `generated-dependencies.xml`
+
+Contains **ready-to-use Maven dependencies**:
+
+```xml
+<!-- FastInfoset-1.2.16.jar -->
+<dependency>
+    <groupId>com.sun.xml.fastinfoset</groupId>
+    <artifactId>FastInfoset</artifactId>
+    <version>1.2.16</version>
+</dependency>
+```
+
+You can directly paste this into:
+
+```xml
+<dependencies>
+    ...
+</dependencies>
+```
+
+---
+
+### 2️⃣ `unresolved-jars.txt`
+
+Contains JARs that:
+
+* Could not be resolved via Maven Central
+* Are likely internal, shaded, renamed, or legacy
+
+These are intentionally left for **manual handling**, Nexus uploads, or upgrades.
+
+---
+
+## 📊 Console Summary Example
+
+```
+===== Maven Dependency Generation Summary =====
+Total jars processed : 143
+Resolved successfully: 131
+Failed / unresolved  : 12
+Output file          : generated-dependencies.xml
+Unresolved jars file : unresolved-jars.txt
+================================================
+```
+
+---
+
+## ✅ What This Repo Covers in Ant → Maven Migration
+
+✔ Classifies legacy JARs
+✔ Converts versioned JARs into Maven dependencies
+✔ Reduces manual dependency research by ~90%
+✔ Uses stable Maven Central API (no HTML scraping)
+✔ Produces audit-friendly output
+
+---
+
+## ❌ What This Repo Does NOT Do (By Design)
+
+* Upload internal JARs to Nexus
+* Guess dependency scopes (`test`, `provided`, etc.)
+* Resolve shaded / renamed vendor JARs
+* Replace obsolete libraries
+
+These steps require **architectural decisions** and are intentionally kept manual.
+
+---
+
+## 🧠 Intended Usage
+
+This tooling is meant to be used:
+
+* Early in Ant → Maven migration
+* As a **one-time conversion helper**
+* By developers modernizing legacy Java systems
+
+---
+
+## 🚀 Future Enhancements (Optional)
+
+* Nexus lookup fallback
+* Scope inference
+* DependencyManagement generation
+* Internal JAR auto-skipping
+* Version alignment checks
+
+---
+
+## 📌 Summary
+
+This repository automates the **most repetitive and error-prone part** of Ant → Maven migration:
+
+> Turning a legacy `lib/` folder into a clean, maintainable Maven dependency list.
