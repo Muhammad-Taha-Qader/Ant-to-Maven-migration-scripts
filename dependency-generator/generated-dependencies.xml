@@ -1,0 +1,1106 @@
+<!-- FastInfoset-1.2.16.jar -->
+<dependency>
+    <groupId>com.sun.xml.fastinfoset</groupId>
+    <artifactId>FastInfoset</artifactId>
+    <version>1.2.16</version>
+</dependency>
+
+<!-- SparseBitSet-1.3.jar -->
+<dependency>
+    <groupId>com.zaxxer</groupId>
+    <artifactId>SparseBitSet</artifactId>
+    <version>1.3</version>
+</dependency>
+
+<!-- activation-1.1.1.jar -->
+<dependency>
+    <groupId>one.gfw</groupId>
+    <artifactId>activation</artifactId>
+    <version>1.1.1</version>
+</dependency>
+
+<!-- angus-activation-2.0.2.jar -->
+<dependency>
+    <groupId>org.eclipse.angus</groupId>
+    <artifactId>angus-activation</artifactId>
+    <version>2.0.2</version>
+</dependency>
+
+<!-- ant-1.10.15.jar -->
+<dependency>
+    <groupId>org.apache.ant</groupId>
+    <artifactId>ant</artifactId>
+    <version>1.10.15</version>
+</dependency>
+
+<!-- ant-jsch-1.10.15.jar -->
+<dependency>
+    <groupId>org.apache.ant</groupId>
+    <artifactId>ant-jsch</artifactId>
+    <version>1.10.15</version>
+</dependency>
+
+<!-- ant-launcher-1.10.15.jar -->
+<dependency>
+    <groupId>org.apache.ant</groupId>
+    <artifactId>ant-launcher</artifactId>
+    <version>1.10.15</version>
+</dependency>
+
+<!-- argon2-jvm-2.11.jar -->
+<dependency>
+    <groupId>de.mkammerer</groupId>
+    <artifactId>argon2-jvm</artifactId>
+    <version>2.11</version>
+</dependency>
+
+<!-- argon2-jvm-nolibs-2.11.jar -->
+<dependency>
+    <groupId>de.mkammerer</groupId>
+    <artifactId>argon2-jvm-nolibs</artifactId>
+    <version>2.11</version>
+</dependency>
+
+<!-- asyncutil-0.1.0.jar -->
+<dependency>
+    <groupId>com.ibm.async</groupId>
+    <artifactId>asyncutil</artifactId>
+    <version>0.1.0</version>
+</dependency>
+
+<!-- axis-1.4.jar -->
+<dependency>
+    <groupId>axis</groupId>
+    <artifactId>axis</artifactId>
+    <version>1.4</version>
+</dependency>
+
+<!-- axis-ant-1.4.jar -->
+<dependency>
+    <groupId>axis</groupId>
+    <artifactId>axis-ant</artifactId>
+    <version>1.4</version>
+</dependency>
+
+<!-- axis-saaj-1.4.jar -->
+<dependency>
+    <groupId>axis</groupId>
+    <artifactId>axis-saaj</artifactId>
+    <version>1.4</version>
+</dependency>
+
+<!-- bcpkix-jdk18on-1.79.jar -->
+<dependency>
+    <groupId>org.bouncycastle</groupId>
+    <artifactId>bcpkix-jdk18on</artifactId>
+    <version>1.79</version>
+</dependency>
+
+<!-- bcprov-jdk18on-1.79.jar -->
+<dependency>
+    <groupId>org.bouncycastle</groupId>
+    <artifactId>bcprov-jdk18on</artifactId>
+    <version>1.79</version>
+</dependency>
+
+<!-- bcutil-jdk18on-1.79.jar -->
+<dependency>
+    <groupId>org.bouncycastle</groupId>
+    <artifactId>bcutil-jdk18on</artifactId>
+    <version>1.79</version>
+</dependency>
+
+<!-- btf-1.3.jar -->
+<dependency>
+    <groupId>com.github.java-json-tools</groupId>
+    <artifactId>btf</artifactId>
+    <version>1.3</version>
+</dependency>
+
+<!-- checker-qual-3.43.0.jar -->
+<dependency>
+    <groupId>org.checkerframework</groupId>
+    <artifactId>checker-qual</artifactId>
+    <version>3.43.0</version>
+</dependency>
+
+<!-- codemodel-4.0.5.jar -->
+<dependency>
+    <groupId>org.glassfish.jaxb</groupId>
+    <artifactId>codemodel</artifactId>
+    <version>4.0.5</version>
+</dependency>
+
+<!-- commons-codec-1.17.1.jar -->
+<dependency>
+    <groupId>commons-codec</groupId>
+    <artifactId>commons-codec</artifactId>
+    <version>1.17.1</version>
+</dependency>
+
+<!-- commons-collections-3.2.2.jar -->
+<dependency>
+    <groupId>commons-collections</groupId>
+    <artifactId>commons-collections</artifactId>
+    <version>3.2.2</version>
+</dependency>
+
+<!-- commons-collections4-4.4.jar -->
+<dependency>
+    <groupId>org.apache.commons</groupId>
+    <artifactId>commons-collections4</artifactId>
+    <version>4.4</version>
+</dependency>
+
+<!-- commons-dbcp-1.4.jar -->
+<dependency>
+    <groupId>commons-dbcp</groupId>
+    <artifactId>commons-dbcp</artifactId>
+    <version>1.4</version>
+</dependency>
+
+<!-- commons-discovery-0.2.jar -->
+<dependency>
+    <groupId>commons-discovery</groupId>
+    <artifactId>commons-discovery</artifactId>
+    <version>0.2</version>
+</dependency>
+
+<!-- commons-discovery-0.5.jar -->
+<dependency>
+    <groupId>com.sixdimensions.commons.osgi.wrapper</groupId>
+    <artifactId>commons-discovery</artifactId>
+    <version>0.5</version>
+</dependency>
+
+<!-- commons-fileupload2-core-2.0.0-M2.jar -->
+<dependency>
+    <groupId>org.apache.commons</groupId>
+    <artifactId>commons-fileupload2-core</artifactId>
+    <version>2.0.0-M2</version>
+</dependency>
+
+<!-- commons-fileupload2-jakarta-servlet6-2.0.0-M2.jar -->
+<dependency>
+    <groupId>org.apache.commons</groupId>
+    <artifactId>commons-fileupload2-jakarta-servlet6</artifactId>
+    <version>2.0.0-M2</version>
+</dependency>
+
+<!-- commons-io-2.1.jar -->
+<dependency>
+    <groupId>org.lucee</groupId>
+    <artifactId>commons-io</artifactId>
+    <version>2.1</version>
+</dependency>
+
+<!-- commons-io-2.18.0.jar -->
+<dependency>
+    <groupId>commons-io</groupId>
+    <artifactId>commons-io</artifactId>
+    <version>2.18.0</version>
+</dependency>
+
+<!-- commons-lang-2.6.jar -->
+<dependency>
+    <groupId>commons-lang</groupId>
+    <artifactId>commons-lang</artifactId>
+    <version>2.6</version>
+</dependency>
+
+<!-- commons-lang3-3.17.0.jar -->
+<dependency>
+    <groupId>org.apache.commons</groupId>
+    <artifactId>commons-lang3</artifactId>
+    <version>3.17.0</version>
+</dependency>
+
+<!-- commons-logging-1.3.4.jar -->
+<dependency>
+    <groupId>commons-logging</groupId>
+    <artifactId>commons-logging</artifactId>
+    <version>1.3.4</version>
+</dependency>
+
+<!-- commons-math3-3.2.jar -->
+<dependency>
+    <groupId>org.apache.commons</groupId>
+    <artifactId>commons-math3</artifactId>
+    <version>3.2</version>
+</dependency>
+
+<!-- commons-math3-3.6.1.jar -->
+<dependency>
+    <groupId>org.apache.commons</groupId>
+    <artifactId>commons-math3</artifactId>
+    <version>3.6.1</version>
+</dependency>
+
+<!-- commons-pool-1.5.5.jar -->
+<dependency>
+    <groupId>commons-pool</groupId>
+    <artifactId>commons-pool</artifactId>
+    <version>1.5.5</version>
+</dependency>
+
+<!-- cryptacular-1.2.4.jar -->
+<dependency>
+    <groupId>org.cryptacular</groupId>
+    <artifactId>cryptacular</artifactId>
+    <version>1.2.4</version>
+</dependency>
+
+<!-- disruptor-3.4.4.jar -->
+<dependency>
+    <groupId>com.lmax</groupId>
+    <artifactId>disruptor</artifactId>
+    <version>3.4.4</version>
+</dependency>
+
+<!-- dom4j-2.1.4.jar -->
+<dependency>
+    <groupId>org.dom4j</groupId>
+    <artifactId>dom4j</artifactId>
+    <version>2.1.4</version>
+</dependency>
+
+<!-- error_prone_annotations-2.28.0.jar -->
+<dependency>
+    <groupId>com.google.errorprone</groupId>
+    <artifactId>error_prone_annotations</artifactId>
+    <version>2.28.0</version>
+</dependency>
+
+<!-- failureaccess-1.0.2.jar -->
+<dependency>
+    <groupId>com.google.guava</groupId>
+    <artifactId>failureaccess</artifactId>
+    <version>1.0.2</version>
+</dependency>
+
+<!-- gson-2.9.1.jar -->
+<dependency>
+    <groupId>org.immutables</groupId>
+    <artifactId>gson</artifactId>
+    <version>2.9.1</version>
+</dependency>
+
+<!-- guava-33.3.1-android.jar -->
+<dependency>
+    <groupId>com.google.guava</groupId>
+    <artifactId>guava</artifactId>
+    <version>33.3.1-android</version>
+</dependency>
+
+<!-- guava-33.3.1-jre.jar -->
+<dependency>
+    <groupId>com.google.guava</groupId>
+    <artifactId>guava</artifactId>
+    <version>33.3.1-jre</version>
+</dependency>
+
+<!-- hamcrest-core-1.3.jar -->
+<dependency>
+    <groupId>org.hamcrest</groupId>
+    <artifactId>hamcrest-core</artifactId>
+    <version>1.3</version>
+</dependency>
+
+<!-- httpclient-4.5.14.jar -->
+<dependency>
+    <groupId>org.apache.httpcomponents</groupId>
+    <artifactId>httpclient</artifactId>
+    <version>4.5.14</version>
+</dependency>
+
+<!-- httpclient5-5.4.1.jar -->
+<dependency>
+    <groupId>org.apache.httpcomponents.client5</groupId>
+    <artifactId>httpclient5</artifactId>
+    <version>5.4.1</version>
+</dependency>
+
+<!-- httpcore-4.4.16.jar -->
+<dependency>
+    <groupId>com.yanzhenjie.apache</groupId>
+    <artifactId>httpcore</artifactId>
+    <version>4.4.16</version>
+</dependency>
+
+<!-- httpcore5-5.3.1.jar -->
+<dependency>
+    <groupId>org.apache.httpcomponents.core5</groupId>
+    <artifactId>httpcore5</artifactId>
+    <version>5.3.1</version>
+</dependency>
+
+<!-- httpcore5-h2-5.3.1.jar -->
+<dependency>
+    <groupId>org.apache.httpcomponents.core5</groupId>
+    <artifactId>httpcore5-h2</artifactId>
+    <version>5.3.1</version>
+</dependency>
+
+<!-- istack-commons-runtime-4.1.2.jar -->
+<dependency>
+    <groupId>com.sun.istack</groupId>
+    <artifactId>istack-commons-runtime</artifactId>
+    <version>4.1.2</version>
+</dependency>
+
+<!-- istack-commons-tools-4.1.2.jar -->
+<dependency>
+    <groupId>com.sun.istack</groupId>
+    <artifactId>istack-commons-tools</artifactId>
+    <version>4.1.2</version>
+</dependency>
+
+<!-- j2objc-annotations-3.0.0.jar -->
+<dependency>
+    <groupId>com.google.j2objc</groupId>
+    <artifactId>j2objc-annotations</artifactId>
+    <version>3.0.0</version>
+</dependency>
+
+<!-- jackson-annotations-2.18.1.jar -->
+<dependency>
+    <groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-annotations</artifactId>
+    <version>2.18.1</version>
+</dependency>
+
+<!-- jackson-core-2.18.1.jar -->
+<dependency>
+    <groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-core</artifactId>
+    <version>2.18.1</version>
+</dependency>
+
+<!-- jackson-coreutils-2.0.jar -->
+<dependency>
+    <groupId>com.github.java-json-tools</groupId>
+    <artifactId>jackson-coreutils</artifactId>
+    <version>2.0</version>
+</dependency>
+
+<!-- jackson-databind-2.18.1.jar -->
+<dependency>
+    <groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-databind</artifactId>
+    <version>2.18.1</version>
+</dependency>
+
+<!-- jackson-datatype-jdk8-2.18.1.jar -->
+<dependency>
+    <groupId>com.fasterxml.jackson.datatype</groupId>
+    <artifactId>jackson-datatype-jdk8</artifactId>
+    <version>2.18.1</version>
+</dependency>
+
+<!-- jackson-datatype-jsr310-2.18.1.jar -->
+<dependency>
+    <groupId>com.fasterxml.jackson.datatype</groupId>
+    <artifactId>jackson-datatype-jsr310</artifactId>
+    <version>2.18.1</version>
+</dependency>
+
+<!-- jackson-jakarta-rs-base-2.18.1.jar -->
+<dependency>
+    <groupId>com.fasterxml.jackson.jakarta.rs</groupId>
+    <artifactId>jackson-jakarta-rs-base</artifactId>
+    <version>2.18.1</version>
+</dependency>
+
+<!-- jackson-jakarta-rs-json-provider-2.18.1.jar -->
+<dependency>
+    <groupId>com.fasterxml.jackson.jakarta.rs</groupId>
+    <artifactId>jackson-jakarta-rs-json-provider</artifactId>
+    <version>2.18.1</version>
+</dependency>
+
+<!-- jackson-jaxrs-base-2.9.9.jar -->
+<dependency>
+    <groupId>com.fasterxml.jackson.jaxrs</groupId>
+    <artifactId>jackson-jaxrs-base</artifactId>
+    <version>2.9.9</version>
+</dependency>
+
+<!-- jackson-jaxrs-json-provider-2.9.9.jar -->
+<dependency>
+    <groupId>com.fasterxml.jackson.jaxrs</groupId>
+    <artifactId>jackson-jaxrs-json-provider</artifactId>
+    <version>2.9.9</version>
+</dependency>
+
+<!-- jackson-module-jakarta-xmlbind-annotations-2.18.1.jar -->
+<dependency>
+    <groupId>com.fasterxml.jackson.module</groupId>
+    <artifactId>jackson-module-jakarta-xmlbind-annotations</artifactId>
+    <version>2.18.1</version>
+</dependency>
+
+<!-- jackson-module-jaxb-annotations-2.9.9.jar -->
+<dependency>
+    <groupId>com.fasterxml.jackson.module</groupId>
+    <artifactId>jackson-module-jaxb-annotations</artifactId>
+    <version>2.9.9</version>
+</dependency>
+
+<!-- jakarta.activation-api-2.1.3.jar -->
+<dependency>
+    <groupId>jakarta.activation</groupId>
+    <artifactId>jakarta.activation-api</artifactId>
+    <version>2.1.3</version>
+</dependency>
+
+<!-- jakarta.annotation-api-2.1.1.jar -->
+<dependency>
+    <groupId>one.gfw</groupId>
+    <artifactId>jakarta.annotation-api</artifactId>
+    <version>2.1.1</version>
+</dependency>
+
+<!-- jakarta.servlet-api-6.1.0.jar -->
+<dependency>
+    <groupId>jakarta.servlet</groupId>
+    <artifactId>jakarta.servlet-api</artifactId>
+    <version>6.1.0</version>
+</dependency>
+
+<!-- jakarta.validation-api-3.0.2.jar -->
+<dependency>
+    <groupId>jakarta.validation</groupId>
+    <artifactId>jakarta.validation-api</artifactId>
+    <version>3.0.2</version>
+</dependency>
+
+<!-- jakarta.ws.rs-api-3.1.0.jar -->
+<dependency>
+    <groupId>jakarta.ws.rs</groupId>
+    <artifactId>jakarta.ws.rs-api</artifactId>
+    <version>3.1.0</version>
+</dependency>
+
+<!-- jakarta.xml.bind-api-3.0.1.jar -->
+<dependency>
+    <groupId>jakarta.xml.bind</groupId>
+    <artifactId>jakarta.xml.bind-api</artifactId>
+    <version>3.0.1</version>
+</dependency>
+
+<!-- jandex-2.4.5.Final.jar -->
+<dependency>
+    <groupId>org.jboss</groupId>
+    <artifactId>jandex</artifactId>
+    <version>2.4.5.Final</version>
+</dependency>
+
+<!-- java-support-8.0.0.jar -->
+<dependency>
+    <groupId>net.shibboleth.utilities</groupId>
+    <artifactId>java-support</artifactId>
+    <version>8.0.0</version>
+</dependency>
+
+<!-- javassist-3.0.jar -->
+<dependency>
+    <groupId>javassist</groupId>
+    <artifactId>javassist</artifactId>
+    <version>3.0</version>
+</dependency>
+
+<!-- javax.activation-api-1.2.0.jar -->
+<dependency>
+    <groupId>one.gfw</groupId>
+    <artifactId>javax.activation-api</artifactId>
+    <version>1.2.0</version>
+</dependency>
+
+<!-- javax.annotation-api-1.3.2.jar -->
+<dependency>
+    <groupId>one.gfw</groupId>
+    <artifactId>javax.annotation-api</artifactId>
+    <version>1.3.2</version>
+</dependency>
+
+<!-- javax.xml.soap-api-1.4.0.jar -->
+<dependency>
+    <groupId>javax.xml.soap</groupId>
+    <artifactId>javax.xml.soap-api</artifactId>
+    <version>1.4.0</version>
+</dependency>
+
+<!-- jaxb-api-2.3.1.jar -->
+<dependency>
+    <groupId>one.gfw</groupId>
+    <artifactId>jaxb-api</artifactId>
+    <version>2.3.1</version>
+</dependency>
+
+<!-- jaxb-core-4.0.5.jar -->
+<dependency>
+    <groupId>com.sun.xml.bind</groupId>
+    <artifactId>jaxb-core</artifactId>
+    <version>4.0.5</version>
+</dependency>
+
+<!-- jaxb-impl-2.3.1.jar -->
+<dependency>
+    <groupId>com.sun.xml.bind</groupId>
+    <artifactId>jaxb-impl</artifactId>
+    <version>2.3.1</version>
+</dependency>
+
+<!-- jaxb-jxc-4.0.5.jar -->
+<dependency>
+    <groupId>com.sun.xml.bind</groupId>
+    <artifactId>jaxb-jxc</artifactId>
+    <version>4.0.5</version>
+</dependency>
+
+<!-- jaxb-runtime-4.0.5.jar -->
+<dependency>
+    <groupId>org.glassfish.jaxb</groupId>
+    <artifactId>jaxb-runtime</artifactId>
+    <version>4.0.5</version>
+</dependency>
+
+<!-- jaxb-xjc-4.0.5.jar -->
+<dependency>
+    <groupId>com.sun.xml.bind</groupId>
+    <artifactId>jaxb-xjc</artifactId>
+    <version>4.0.5</version>
+</dependency>
+
+<!-- jaxrpc-api-1.1.jar -->
+<dependency>
+    <groupId>com.sixdimensions.commons.osgi.wrapper</groupId>
+    <artifactId>jaxrpc-api</artifactId>
+    <version>1.1</version>
+</dependency>
+
+<!-- jaxrs-api-3.0.0.Final.jar -->
+<dependency>
+    <groupId>org.jboss.resteasy</groupId>
+    <artifactId>jaxrs-api</artifactId>
+    <version>3.0.0.Final</version>
+</dependency>
+
+<!-- jaxws-api-2.3.1.jar -->
+<dependency>
+    <groupId>javax.xml.ws</groupId>
+    <artifactId>jaxws-api</artifactId>
+    <version>2.3.1</version>
+</dependency>
+
+<!-- jboss-annotations-api_1.3_spec-2.0.1.Final.jar -->
+<dependency>
+    <groupId>org.jboss.spec.javax.annotation</groupId>
+    <artifactId>jboss-annotations-api_1.3_spec</artifactId>
+    <version>2.0.1.Final</version>
+</dependency>
+
+<!-- jboss-jaxb-api_2.3_spec-2.0.1.Final.jar -->
+<dependency>
+    <groupId>org.jboss.spec.javax.xml.bind</groupId>
+    <artifactId>jboss-jaxb-api_2.3_spec</artifactId>
+    <version>2.0.1.Final</version>
+</dependency>
+
+<!-- jboss-jaxrs-api_2.1_spec-2.0.1.Final.jar -->
+<dependency>
+    <groupId>org.jboss.spec.javax.ws.rs</groupId>
+    <artifactId>jboss-jaxrs-api_2.1_spec</artifactId>
+    <version>2.0.1.Final</version>
+</dependency>
+
+<!-- jboss-logging-3.3.0.Final.jar -->
+<dependency>
+    <groupId>org.jboss.logging</groupId>
+    <artifactId>jboss-logging</artifactId>
+    <version>3.3.0.Final</version>
+</dependency>
+
+<!-- jboss-logging-3.5.3.Final.jar -->
+<dependency>
+    <groupId>org.jboss.logging</groupId>
+    <artifactId>jboss-logging</artifactId>
+    <version>3.5.3.Final</version>
+</dependency>
+
+<!-- jgroups-5.3.13.Final.jar -->
+<dependency>
+    <groupId>org.jgroups</groupId>
+    <artifactId>jgroups</artifactId>
+    <version>5.3.13.Final</version>
+</dependency>
+
+<!-- jna-5.13.0.jar -->
+<dependency>
+    <groupId>one.gfw</groupId>
+    <artifactId>jna</artifactId>
+    <version>5.13.0</version>
+</dependency>
+
+<!-- joda-time-2.2.jar -->
+<dependency>
+    <groupId>joda-time</groupId>
+    <artifactId>joda-time</artifactId>
+    <version>2.2</version>
+</dependency>
+
+<!-- jsch-0.1.55.jar -->
+<dependency>
+    <groupId>org.lucee</groupId>
+    <artifactId>jsch</artifactId>
+    <version>0.1.55</version>
+</dependency>
+
+<!-- json-patch-1.13.jar -->
+<dependency>
+    <groupId>com.github.java-json-tools</groupId>
+    <artifactId>json-patch</artifactId>
+    <version>1.13</version>
+</dependency>
+
+<!-- jsr305-3.0.2.jar -->
+<dependency>
+    <groupId>dev.mccue</groupId>
+    <artifactId>jsr305</artifactId>
+    <version>3.0.2</version>
+</dependency>
+
+<!-- jta-1.1.jar -->
+<dependency>
+    <groupId>dev.galasa</groupId>
+    <artifactId>jta</artifactId>
+    <version>1.1</version>
+</dependency>
+
+<!-- junit-4.13.2.jar -->
+<dependency>
+    <groupId>junit</groupId>
+    <artifactId>junit</artifactId>
+    <version>4.13.2</version>
+</dependency>
+
+<!-- kryo-3.0.1.jar -->
+<dependency>
+    <groupId>com.esotericsoftware</groupId>
+    <artifactId>kryo</artifactId>
+    <version>3.0.1</version>
+</dependency>
+
+<!-- libphonenumber-8.12.34.jar -->
+<dependency>
+    <groupId>com.googlecode.libphonenumber</groupId>
+    <artifactId>libphonenumber</artifactId>
+    <version>8.12.34</version>
+</dependency>
+
+<!-- listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar -->
+<dependency>
+    <groupId>com.google.guava</groupId>
+    <artifactId>listenablefuture</artifactId>
+    <version>9999.0-empty-to-avoid-conflict-with-guava</version>
+</dependency>
+
+<!-- log4j-1.2-api-2.24.2.jar -->
+<dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-1.2-api</artifactId>
+    <version>2.24.2</version>
+</dependency>
+
+<!-- log4j-api-2.24.2.jar -->
+<dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-api</artifactId>
+    <version>2.24.2</version>
+</dependency>
+
+<!-- log4j-core-2.24.2.jar -->
+<dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-core</artifactId>
+    <version>2.24.2</version>
+</dependency>
+
+<!-- log4j-jcl-2.24.2.jar -->
+<dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-jcl</artifactId>
+    <version>2.24.2</version>
+</dependency>
+
+<!-- log4j-jul-2.24.2.jar -->
+<dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-jul</artifactId>
+    <version>2.24.2</version>
+</dependency>
+
+<!-- log4j-slf4j-impl-2.24.2.jar -->
+<dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-slf4j-impl</artifactId>
+    <version>2.24.2</version>
+</dependency>
+
+<!-- metrics-core-4.1.4.jar -->
+<dependency>
+    <groupId>io.dropwizard.metrics</groupId>
+    <artifactId>metrics-core</artifactId>
+    <version>4.1.4</version>
+</dependency>
+
+<!-- msg-simple-1.2.jar -->
+<dependency>
+    <groupId>com.github.java-json-tools</groupId>
+    <artifactId>msg-simple</artifactId>
+    <version>1.2</version>
+</dependency>
+
+<!-- mysql-connector-j-9.0.0.jar -->
+<dependency>
+    <groupId>com.mysql</groupId>
+    <artifactId>mysql-connector-j</artifactId>
+    <version>9.0.0</version>
+</dependency>
+
+<!-- not-yet-commons-ssl-0.3.9.jar -->
+<dependency>
+    <groupId>ca.juliusdavies</groupId>
+    <artifactId>not-yet-commons-ssl</artifactId>
+    <version>0.3.9</version>
+</dependency>
+
+<!-- opensaml-core-4.0.1.jar -->
+<dependency>
+    <groupId>org.opensaml</groupId>
+    <artifactId>opensaml-core</artifactId>
+    <version>4.0.1</version>
+</dependency>
+
+<!-- opensaml-messaging-api-4.0.1.jar -->
+<dependency>
+    <groupId>org.opensaml</groupId>
+    <artifactId>opensaml-messaging-api</artifactId>
+    <version>4.0.1</version>
+</dependency>
+
+<!-- opensaml-profile-api-4.0.1.jar -->
+<dependency>
+    <groupId>org.opensaml</groupId>
+    <artifactId>opensaml-profile-api</artifactId>
+    <version>4.0.1</version>
+</dependency>
+
+<!-- opensaml-saml-api-4.0.1.jar -->
+<dependency>
+    <groupId>org.opensaml</groupId>
+    <artifactId>opensaml-saml-api</artifactId>
+    <version>4.0.1</version>
+</dependency>
+
+<!-- opensaml-saml-impl-4.0.1.jar -->
+<dependency>
+    <groupId>org.opensaml</groupId>
+    <artifactId>opensaml-saml-impl</artifactId>
+    <version>4.0.1</version>
+</dependency>
+
+<!-- opensaml-security-api-4.0.1.jar -->
+<dependency>
+    <groupId>org.opensaml</groupId>
+    <artifactId>opensaml-security-api</artifactId>
+    <version>4.0.1</version>
+</dependency>
+
+<!-- opensaml-security-impl-4.0.1.jar -->
+<dependency>
+    <groupId>org.opensaml</groupId>
+    <artifactId>opensaml-security-impl</artifactId>
+    <version>4.0.1</version>
+</dependency>
+
+<!-- opensaml-soap-api-4.0.1.jar -->
+<dependency>
+    <groupId>org.opensaml</groupId>
+    <artifactId>opensaml-soap-api</artifactId>
+    <version>4.0.1</version>
+</dependency>
+
+<!-- opensaml-soap-impl-4.0.1.jar -->
+<dependency>
+    <groupId>org.opensaml</groupId>
+    <artifactId>opensaml-soap-impl</artifactId>
+    <version>4.0.1</version>
+</dependency>
+
+<!-- opensaml-storage-api-4.0.1.jar -->
+<dependency>
+    <groupId>org.opensaml</groupId>
+    <artifactId>opensaml-storage-api</artifactId>
+    <version>4.0.1</version>
+</dependency>
+
+<!-- opensaml-xmlsec-api-4.0.1.jar -->
+<dependency>
+    <groupId>org.opensaml</groupId>
+    <artifactId>opensaml-xmlsec-api</artifactId>
+    <version>4.0.1</version>
+</dependency>
+
+<!-- opensaml-xmlsec-impl-4.0.1.jar -->
+<dependency>
+    <groupId>org.opensaml</groupId>
+    <artifactId>opensaml-xmlsec-impl</artifactId>
+    <version>4.0.1</version>
+</dependency>
+
+<!-- poi-5.3.0.jar -->
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi</artifactId>
+    <version>5.3.0</version>
+</dependency>
+
+<!-- postgresql-42.7.4.jar -->
+<dependency>
+    <groupId>org.postgresql</groupId>
+    <artifactId>postgresql</artifactId>
+    <version>42.7.4</version>
+</dependency>
+
+<!-- proto-google-common-protos-2.41.0.jar -->
+<dependency>
+    <groupId>com.google.api.grpc</groupId>
+    <artifactId>proto-google-common-protos</artifactId>
+    <version>2.41.0</version>
+</dependency>
+
+<!-- protobuf-java-4.26.1.jar -->
+<dependency>
+    <groupId>com.google.protobuf</groupId>
+    <artifactId>protobuf-java</artifactId>
+    <version>4.26.1</version>
+</dependency>
+
+<!-- reactive-streams-1.0.4.jar -->
+<dependency>
+    <groupId>org.reactivestreams</groupId>
+    <artifactId>reactive-streams</artifactId>
+    <version>1.0.4</version>
+</dependency>
+
+<!-- relaxng-datatype-4.0.5.jar -->
+<dependency>
+    <groupId>com.sun.xml.bind.external</groupId>
+    <artifactId>relaxng-datatype</artifactId>
+    <version>4.0.5</version>
+</dependency>
+
+<!-- resteasy-client-6.2.11.Final.jar -->
+<dependency>
+    <groupId>org.jboss.resteasy</groupId>
+    <artifactId>resteasy-client</artifactId>
+    <version>6.2.11.Final</version>
+</dependency>
+
+<!-- resteasy-client-api-6.2.11.Final.jar -->
+<dependency>
+    <groupId>org.jboss.resteasy</groupId>
+    <artifactId>resteasy-client-api</artifactId>
+    <version>6.2.11.Final</version>
+</dependency>
+
+<!-- resteasy-core-6.2.11.Final.jar -->
+<dependency>
+    <groupId>org.jboss.resteasy</groupId>
+    <artifactId>resteasy-core</artifactId>
+    <version>6.2.11.Final</version>
+</dependency>
+
+<!-- resteasy-core-spi-6.2.11.Final.jar -->
+<dependency>
+    <groupId>org.jboss.resteasy</groupId>
+    <artifactId>resteasy-core-spi</artifactId>
+    <version>6.2.11.Final</version>
+</dependency>
+
+<!-- resteasy-jackson2-provider-6.2.11.Final.jar -->
+<dependency>
+    <groupId>org.jboss.resteasy</groupId>
+    <artifactId>resteasy-jackson2-provider</artifactId>
+    <version>6.2.11.Final</version>
+</dependency>
+
+<!-- resteasy-jaxb-provider-6.2.11.Final.jar -->
+<dependency>
+    <groupId>org.jboss.resteasy</groupId>
+    <artifactId>resteasy-jaxb-provider</artifactId>
+    <version>6.2.11.Final</version>
+</dependency>
+
+<!-- rngom-4.0.5.jar -->
+<dependency>
+    <groupId>com.sun.xml.bind.external</groupId>
+    <artifactId>rngom</artifactId>
+    <version>4.0.5</version>
+</dependency>
+
+<!-- saaj-impl-1.5.1.jar -->
+<dependency>
+    <groupId>com.sun.xml.messaging.saaj</groupId>
+    <artifactId>saaj-impl</artifactId>
+    <version>1.5.1</version>
+</dependency>
+
+<!-- scannotation-1.0.2.jar -->
+<dependency>
+    <groupId>net.sf.scannotation</groupId>
+    <artifactId>scannotation</artifactId>
+    <version>1.0.2</version>
+</dependency>
+
+<!-- slf4j-api-2.0.16.jar -->
+<dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-api</artifactId>
+    <version>2.0.16</version>
+</dependency>
+
+<!-- spring-core-6.2.0.jar -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-core</artifactId>
+    <version>6.2.0</version>
+</dependency>
+
+<!-- spring-jcl-6.2.0.jar -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-jcl</artifactId>
+    <version>6.2.0</version>
+</dependency>
+
+<!-- stax-ex-1.8.1.jar -->
+<dependency>
+    <groupId>org.jvnet.staxex</groupId>
+    <artifactId>stax-ex</artifactId>
+    <version>1.8.1</version>
+</dependency>
+
+<!-- stax2-api-4.2.2.jar -->
+<dependency>
+    <groupId>org.codehaus.woodstox</groupId>
+    <artifactId>stax2-api</artifactId>
+    <version>4.2.2</version>
+</dependency>
+
+<!-- tomcat-dbcp-11.0.1.jar -->
+<dependency>
+    <groupId>org.apache.tomcat</groupId>
+    <artifactId>tomcat-dbcp</artifactId>
+    <version>11.0.1</version>
+</dependency>
+
+<!-- tomcat-juli-11.0.1.jar -->
+<dependency>
+    <groupId>org.apache.tomcat</groupId>
+    <artifactId>tomcat-juli</artifactId>
+    <version>11.0.1</version>
+</dependency>
+
+<!-- txw2-4.0.5.jar -->
+<dependency>
+    <groupId>org.glassfish.jaxb</groupId>
+    <artifactId>txw2</artifactId>
+    <version>4.0.5</version>
+</dependency>
+
+<!-- tyrex-1.0.1.jar -->
+<dependency>
+    <groupId>tyrex</groupId>
+    <artifactId>tyrex</artifactId>
+    <version>1.0.1</version>
+</dependency>
+
+<!-- velocity-engine-core-2.4.1.jar -->
+<dependency>
+    <groupId>org.apache.velocity</groupId>
+    <artifactId>velocity-engine-core</artifactId>
+    <version>2.4.1</version>
+</dependency>
+
+<!-- velocity-tools-generic-3.1.jar -->
+<dependency>
+    <groupId>org.apache.velocity.tools</groupId>
+    <artifactId>velocity-tools-generic</artifactId>
+    <version>3.1</version>
+</dependency>
+
+<!-- woodstox-core-6.6.2.jar -->
+<dependency>
+    <groupId>com.fasterxml.woodstox</groupId>
+    <artifactId>woodstox-core</artifactId>
+    <version>6.6.2</version>
+</dependency>
+
+<!-- wsdl4j-1.5.1.jar -->
+<dependency>
+    <groupId>org.lucee</groupId>
+    <artifactId>wsdl4j</artifactId>
+    <version>1.5.1</version>
+</dependency>
+
+<!-- wss4j-1.6.19.jar -->
+<dependency>
+    <groupId>org.apache.ws.security</groupId>
+    <artifactId>wss4j</artifactId>
+    <version>1.6.19</version>
+</dependency>
+
+<!-- xercesImpl-2.12.2.jar -->
+<dependency>
+    <groupId>org.exist-db.thirdparty.xerces</groupId>
+    <artifactId>xercesImpl</artifactId>
+    <version>2.12.2</version>
+</dependency>
+
+<!-- xml-apis-1.4.01.jar -->
+<dependency>
+    <groupId>xml-apis</groupId>
+    <artifactId>xml-apis</artifactId>
+    <version>1.4.01</version>
+</dependency>
+
+<!-- xmlbeans-5.2.2.jar -->
+<dependency>
+    <groupId>org.apache.xmlbeans</groupId>
+    <artifactId>xmlbeans</artifactId>
+    <version>5.2.2</version>
+</dependency>
+
+<!-- xmlsec-4.0.3.jar -->
+<dependency>
+    <groupId>org.apache.santuario</groupId>
+    <artifactId>xmlsec</artifactId>
+    <version>4.0.3</version>
+</dependency>
+
+<!-- xmltooling-1.4.4.jar -->
+<dependency>
+    <groupId>org.opensaml</groupId>
+    <artifactId>xmltooling</artifactId>
+    <version>1.4.4</version>
+</dependency>
+
+<!-- xsom-4.0.5.jar -->
+<dependency>
+    <groupId>org.glassfish.jaxb</groupId>
+    <artifactId>xsom</artifactId>
+    <version>4.0.5</version>
+</dependency>
+
