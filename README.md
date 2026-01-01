@@ -26,6 +26,7 @@ During Maven migration, you must:
 * Identify **3rd-party vs internal JARs**
 * Convert versioned JARs into proper `<dependency>` entries
 * Decide how to handle non-versioned / internal JARs (e.g., Nexus, replacements, upgrades)
+* Analyzes transitive dependencies safely
 
 This repository automates **exactly that phase**.
 
@@ -193,12 +194,78 @@ Unresolved jars file : unresolved-jars.txt
 
 ---
 
+### 3️⃣ `MavenTreeAnalyzer.java`
+
+**Purpose:**
+Analyzes the output of `mvn dependency:tree` to identify **safe transitive dependencies** and highlight **only those transitive JARs that are NOT already present as direct (main) dependencies**.
+
+This step is typically used **after initial dependency generation**, once a working `pom.xml` exists.
+
+It helps:
+
+* Avoid redundant dependency declarations
+* Detect hidden transitive-only libraries
+* Prevent accidental version / artifact duplication
+* Make dependency cleanup decisions confidently
+
+In simple terms, you can exclude all transitive dependencies except those flagged by this utility. This utility only lists the jars that are not conflicting, and therefore should not be excluded blindly.
+
+#### Input
+
+A Maven dependency tree output file:
+
+```
+mvn dependency:tree > tree.txt
+```
+
+#### Analysis Strategy
+
+The analyzer produces **two reports**:
+
+**Report 1 – Strict comparison**
+
+* Conflict check uses **groupId + artifactId**
+* Versions are ignored intentionally
+
+**Report 2 – Relaxed comparison**
+
+* Conflict check uses **artifactId only**
+* groupId and version are ignored
+* Useful for detecting relocated or repackaged libraries (e.g. `jsch`)
+
+#### Key Assumptions
+
+* Tree is generated using default Maven formatting
+* Lines starting with `+-` are main dependencies
+* Lines starting with `|  \\` or `|  +-` are transitive dependencies
+
+#### Output Example
+
+```
+REPORT 1: Missing transitive deps (groupId + artifactId comparison)
+org.apache.ant:ant-jsch
+  -> com.jcraft:jsch
+
+REPORT 2: Missing transitive deps (artifactId-only comparison)
+(No entry shown if artifact already exists as a main dependency)
+```
+
+#### How to Run
+
+```bash
+javac MavenTreeAnalyzer.java
+java MavenTreeAnalyzer tree.txt
+```
+
+---
+
 ## ✅ What This Repo Covers in Ant → Maven Migration
 
 ✔ Classifies legacy JARs
 ✔ Converts versioned JARs into Maven dependencies
+✔ Analyzes transitive dependencies safely
+✔ Prevents duplicate or conflicting JAR inclusion
 ✔ Reduces manual dependency research by ~90%
-✔ Uses stable Maven Central API (no HTML scraping)
 ✔ Produces audit-friendly output
 
 ---
@@ -207,7 +274,7 @@ Unresolved jars file : unresolved-jars.txt
 
 * Upload internal JARs to Nexus
 * Guess dependency scopes (`test`, `provided`, etc.)
-* Resolve shaded / renamed vendor JARs
+* Resolve shaded / renamed vendor JARs automatically
 * Replace obsolete libraries
 
 These steps require **architectural decisions** and are intentionally kept manual.
@@ -218,24 +285,23 @@ These steps require **architectural decisions** and are intentionally kept manua
 
 This tooling is meant to be used:
 
-* Early in Ant → Maven migration
-* As a **one-time conversion helper**
-* By developers modernizing legacy Java systems
+* Early-to-mid Ant → Maven migration
+* As a **one-time conversion & validation helper**
+* By developers modernizing large legacy Java systems
 
 ---
 
 ## 🚀 Future Enhancements (Optional)
 
-* Nexus lookup fallback
-* Scope inference
-* DependencyManagement generation
-* Internal JAR auto-skipping
-* Version alignment checks
+* Automatic `<exclusion>` generation
+* Dependency version conflict detection
+* CSV / Excel export for review
+* DependencyManagement block generation
 
 ---
 
 ## 📌 Summary
 
-This repository automates the **most repetitive and error-prone part** of Ant → Maven migration:
+This repository automates the **most repetitive, error-prone, and review-heavy parts** of Ant → Maven migration:
 
-> Turning a legacy `lib/` folder into a clean, maintainable Maven dependency list.
+> Turning a legacy `lib/` folder and dependency tree into a clean, maintainable, and conflict-free Maven dependency setup.
