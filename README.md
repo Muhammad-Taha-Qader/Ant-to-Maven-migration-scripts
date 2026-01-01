@@ -34,6 +34,12 @@ This repository automates **exactly that phase**.
 ---
 
 ## 🧩 Tools Overview
+### 🔗 Tools Navigation
+
+1.  [JarVersionSplitter](#1-jarversionsplitterjava)
+2.  [CheckJarDuplicates](#2-checkjarduplicatesjava)
+3.  [Dependency Generator (Maven Project)](#3-dependency-generator-maven-project)
+4.  [MavenTreeAnalyzer](#4-maventreeanalyzerjava)
 
 ### 1️⃣ `JarVersionSplitter.java`
 
