@@ -34,14 +34,16 @@ This repository automates **exactly that phase**.
 ---
 
 ## 🧩 Tools Overview
+
 ### 🔗 Tools Navigation
 
-1.  [JarVersionSplitter](#1-jarversionsplitterjava)
-2.  [CheckJarDuplicates](#2-checkjarduplicatesjava)
-3.  [Dependency Generator (Maven Project)](#3-dependency-generator-maven-project)
-4.  [MavenTreeAnalyzer](#4-maventreeanalyzerjava)
+- [JarVersionSplitter](#1-jarversionsplitter)
+- [CheckJarDuplicates](#2-checkjarduplicates)
+- [Dependency Generator (Maven project)](#3-dependency-generator-maven-project)
+- [MavenTreeAnalyzer](#4-maventreeanalyzer)
 
-### 1️⃣ `JarVersionSplitter.java`
+
+### 1. JarVersionSplitter
 
 **Purpose:**
 Splits a raw list of JAR file names into:
@@ -92,7 +94,7 @@ java JarVersionSplitter
 
 
 
-### 2️⃣ `CheckJarDuplicates.java`
+### 2. CheckJarDuplicates
 
 **Purpose:**
 A very simple way to detect duplicate JARs (same library name, different versions) from a .txt file.
@@ -145,7 +147,7 @@ java CheckJarDuplicates
 
 
 
-### 3️⃣ `dependency-generator` (Maven project)
+### 3. Dependency Generator (Maven project)
 
 **Purpose:**
 Automatically generates **ready-to-paste Maven `<dependency>` blocks** for all versioned JARs using **Maven Central Search API**.
@@ -256,7 +258,7 @@ Unresolved jars file : unresolved-jars.txt
 
 ---
 
-### 4️⃣ `MavenTreeAnalyzer.java`
+### 4. MavenTreeAnalyzer
 
 **Purpose:**
 Analyzes the output of `mvn dependency:tree` to identify **safe transitive dependencies** and highlight **only those transitive JARs that are NOT already present as direct (main) dependencies**.
