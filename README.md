@@ -24,6 +24,7 @@ In legacy Ant-based projects, dependencies are typically managed as:
 During Maven migration, you must:
 
 * Identify **3rd-party vs internal JARs**
+* Identify dublicate jars with differnt versions - help make clean pom
 * Convert versioned JARs into proper `<dependency>` entries
 * Decide how to handle non-versioned / internal JARs (e.g., Nexus, replacements, upgrades)
 * Analyzes transitive dependencies safely
@@ -83,7 +84,62 @@ java JarVersionSplitter
 
 ---
 
-### 2️⃣ `dependency-generator` (Maven project)
+
+
+### 2️⃣ `CheckJarDuplicates.java`
+
+**Purpose:**
+A very simple way to detect duplicate JARs (same library name, different versions) from a .txt file.
+
+#### 🔍 What counts as “duplicate” here?
+
+- Same artifact name
+- Different versions
+- Example:
+```
+jboss-logging-3.3.0.Final.jar
+jboss-logging-3.5.3.Final.jar
+```
+
+#### Input
+
+A text file containing JAR names (one per line):
+
+```
+jars.txt
+```
+
+#### Output
+```
+DUPLICATE FOUND: commons-math3
+  commons-math3-3.2.jar
+  commons-math3-3.6.1.jar
+-------------------------
+DUPLICATE FOUND: jboss-logging
+  jboss-logging-3.3.0.Final.jar
+  jboss-logging-3.3.0.Final.jar
+  jboss-logging-3.5.3.Final.jar
+-------------------------
+DUPLICATE FOUND: guava
+  guava-33.3.1-android.jar
+  guava-33.3.1-jre.jar
+-------------------------
+```
+
+#### How to Run
+
+```bash
+javac CheckJarDuplicates.java
+java CheckJarDuplicates
+```
+
+---
+
+
+
+
+
+### 3️⃣ `dependency-generator` (Maven project)
 
 **Purpose:**
 Automatically generates **ready-to-paste Maven `<dependency>` blocks** for all versioned JARs using **Maven Central Search API**.
@@ -194,7 +250,7 @@ Unresolved jars file : unresolved-jars.txt
 
 ---
 
-### 3️⃣ `MavenTreeAnalyzer.java`
+### 4️⃣ `MavenTreeAnalyzer.java`
 
 **Purpose:**
 Analyzes the output of `mvn dependency:tree` to identify **safe transitive dependencies** and highlight **only those transitive JARs that are NOT already present as direct (main) dependencies**.
