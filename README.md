@@ -146,7 +146,7 @@ mvn exec:java
 
 ## 📤 Output Files
 
-### 1️⃣ `generated-dependencies.xml`
+### 1️ `generated-dependencies.xml`
 
 Contains **ready-to-use Maven dependencies**:
 
@@ -169,7 +169,7 @@ You can directly paste this into:
 
 ---
 
-### 2️⃣ `unresolved-jars.txt`
+### 2️ `unresolved-jars.txt`
 
 Contains JARs that:
 
@@ -249,6 +249,95 @@ org.apache.ant:ant-jsch
 REPORT 2: Missing transitive deps (artifactId-only comparison)
 (No entry shown if artifact already exists as a main dependency)
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+#### 🔍 Example: How Transitive Dependencies Are Highlighted
+
+Consider the following dependency tree snippet:
+
+```text
+[INFO] +- org.apache.ant:ant-jsch:jar:1.10.15:compile
+[INFO] |  \- com.jcraft:jsch:jar:0.1.55:compile
+[INFO] +- org.lucee:jsch:jar:0.1.55:compile
+````
+
+Here:
+
+* `org.apache.ant:ant-jsch` brings `com.jcraft:jsch` as a **transitive dependency**
+* The same JAR (`jsch`) already exists as a **direct dependency**, but under a **different groupId**
+
+
+
+##### Report 1 – Strict (groupId + artifactId)
+
+**Comparison rule:**
+`groupId + artifactId` (version ignored)
+
+**Result:**
+
+```text
+org.apache.ant:ant-jsch
+  -> com.jcraft:jsch
+```
+
+This appears because:
+
+* `com.jcraft:jsch` ≠ `org.lucee:jsch`
+* GroupId difference is treated as a conflict
+
+This report is useful for:
+
+* Precise dependency hygiene
+* Detecting relocated or forked artifacts
+
+
+
+##### Report 2 – Relaxed (artifactId only)
+
+**Comparison rule:**
+`artifactId` only (groupId and version ignored)
+
+**Result:**
+
+```text
+(no entry reported)
+```
+
+This is because:
+
+* `jsch` already exists as a direct dependency
+* The transitive dependency does not introduce a *new* JAR by name
+
+This report is useful for:
+
+* Avoiding false positives
+* Handling repackaged / shaded / relocated libraries
+* High-level cleanup decisions
+---
+
+
+
+
+
+
+
+
+
+
+
+
 
 #### How to Run
 
